@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Cluster</title>
+</head> -->
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h3>All listings</h3>
+
+<!-- <form method ="GET"action="/listings/new">
+    <button>
+Create new Listing 
+    </button>
+</form> -->
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+<% for (let listing of allListings ){ %>
+ <a href ="/listings/<%= listing._id %>" class="listing-link">
+<div class="card" >
+    <!-- <img src="<%= listing.image %>" class="card-img-top" alt="listing_image"> -->
+    <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem; ">
+
+<!-- issse card ke opper bhe hm likh skte h  -->
+    <div class="card-img-overlay"></div>
+    <div class="card-body">
+      <p class="card-text">
+       <b> <%= listing.title %> </b><br>
+        <!-- <%= listing.description %> <br> -->
+        <% if (listing.price && !isNaN(listing.price)) { %>
+            &#8377; <%= Number(listing.price).toLocaleString("en-IN") %> / night <br>
+          <% } else { %>
+            Price not available <br>
+          <% } %>
+          
+          
+          
+          
+      </p>
+    </div>
+  </div>
+</a>
+  <% }%>
+</div>
+    <!-- <ul>
+        <% for (let listing of allListings ){ %>
+            <li><a href ="/listings/<%= listing._id %>"><%= listing.title%></a></li>
+       <% }%>
+    </ul>
+</body> -->
+
+<!-- </html> -->

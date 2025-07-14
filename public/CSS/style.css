@@ -1,0 +1,164 @@
+/* body{
+    
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    /* margin:0 !important;
+    padding:0 !important;
+    width:100% !important; 
+} */
+
+html, body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+   display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+.container{
+    flex:1;
+}
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+.fa-compass{
+    font-size:2rem;
+    color:#fe424d;
+}
+.nav-link{
+    color:#222222 ! important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+    /* background-color: red; */
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    color:#222222;
+}
+
+.f-info-links,.f-info-socials,.f-info-brand{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+/* vertical-align:middle ; */
+}
+/* .f-info-socials{
+    width:100%;
+    font-size:1.2rem;
+    margin-right:2rem;
+} */
+.f-info-socials i {
+    font-size:1.2rem;
+    margin-right:1.5rem;
+
+}
+
+.f-info{
+    height:8rem;
+    display: flex;
+    background-color:#ebebeb ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+
+/*card styling */
+.card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit:cover !important;
+}
+.card-body{
+    padding: 0 !important;
+    
+}
+.card-text p{
+font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration:none;
+}
+
+/* card effect */
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+opacity:0.2;
+background-color: white;
+}
+
+/* new page  */
+.add-button{
+    background-color: #fe424d!important;
+    border:none !important ;
+}
+
+/* Edit page */
+.edit-button{
+    background-color: #fe424d!important;
+    border:none !important ;
+}
+/* show page */
+.show-img{
+    height:30vh !important;
+    width:76vh !important;
+    /* border-radius: 50% !important; */
+}
+.btns{
+    display:flex;
+}
+.show-card{
+    padding-left:0;
+    padding-right:0;
+}
+.hero-section {
+    background: url("/air.webp") repeat center center;
+    background-size: auto 100%;
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  
+  
+  .typewriter {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    padding: 1rem;
+    text-align: center;
+  }
+ 
+  
+  
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
