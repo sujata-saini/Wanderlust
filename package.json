@@ -1,11 +1,12 @@
 {
   "homepage": "https://sujata-saini.github.io/Wanderlust",
-
   "name": "airbnb_project",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "method-override": "^3.0.0",
     "mongoose": "^8.15.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }

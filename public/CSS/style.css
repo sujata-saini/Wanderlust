@@ -26,6 +26,22 @@ html, body {
     height:5rem;
     background-color: white;
 }
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  
+    .navbar {
+      height: auto;
+      padding: 0.5rem 1rem;
+    }
+  
+    .navbar-toggler {
+      border: none;
+    }
+  }
+  
 .fa-compass{
     font-size:2rem;
     color:#fe424d;
