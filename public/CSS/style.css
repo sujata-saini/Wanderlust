@@ -125,10 +125,19 @@ background-color: white;
 }
 
 /* Edit page */
-.edit-button{
-    background-color: #fe424d!important;
-    border:none !important ;
-}
+.edit-button {
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+  }
+  @media (max-width: 768px) {
+    .edit-button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  }
+  
 /* show page */
 .show-img{
     height:30vh !important;

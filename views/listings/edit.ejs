@@ -26,12 +26,19 @@
 <label for="description"class="form-label">Description</label>
 <textarea name="listing[description]" class="form-control" ><%= listing.description %></textarea>
 </div>
-
+<!-- 
 <div class="mb-3">
  <label for="image"class="form-label">Image Link</label>
- <!-- <input name="listing[image][fileName]" value="<%= listing.image.fileName %>" type="text"class="form-control" placeholder="Image file name"> -->
+ <input name="listing[image][fileName]" value="<%= listing.image.fileName %>" type="text"class="form-control" placeholder="Image file name"> 
 <input name="listing[image][url]" value="<%= listing.image.url %>" type="text" class="form-control"placeholder="Image URL">
-</div>
+</div> -->
+<div class="row">
+    <div class="mb-3 col-12">
+      <label for="image" class="form-label">Image Link</label>
+      <input name="listing[image][url]" value="<%= listing.image.url %>" type="text" class="form-control"placeholder="Image URL">
+    </div>
+  </div>
+  
 <div class="row">
 <div class="mb-3 col-md-4">
 <label for="price"class="form-label">Price</label>
@@ -47,8 +54,11 @@
  <label for="location"class="form-label">location</label>
  <input  name ="listing[location]"  value="<%= listing.location %>" class="form-control"type="text">
 </div>
- <button  class="btn btn-dark mb-3 edit-button mt-3">Edit </button>
-
+ <!-- <button  class="btn btn-dark mb-3 edit-button mt-3">Edit </button> -->
+ <div class="d-flex justify-content-center">
+    <button class="btn edit-button mt-3 mb-3">Edit</button>
+  </div>
+  
  
     </form>
 </div>
