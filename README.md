@@ -3,7 +3,7 @@
 <p>Wanderlust is a simple web application for browsing, creating, editing, and deleting travel or rental listings — inspired by Airbnb.
 <br>
  Demo Link <p></p>: https://wanderlust-izas.onrender.com/
----
+ <br>
 
 ## 🛠️ Technologies Used
 
